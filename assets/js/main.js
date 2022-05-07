@@ -67,6 +67,8 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
+//MATHYU
+
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -87,6 +89,7 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme)
 }
 
+//DIEGO
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -122,7 +125,7 @@ sr.reveal(`.home__data, .svg__img svg__color home__img,
             .footer__content, .footer__social`, {
     interval: 200
 })
-
+//ANDRES
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -151,6 +154,8 @@ window.onclick = function(event) {
 }
 
 
+//MATHYU
+
 // Get the modal
 var modal = document.getElementById("myModal2");
 
@@ -165,6 +170,8 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
+//NICOLE
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -177,15 +184,16 @@ window.onclick = function(event) {
   }
 }
 
+//DIEGO
 //LANGUANGE CHANGER
 
 function change(){
   var select = document.getElementById('language');
   var value = select.options[select.selectedIndex].value;
   if(value === "es-ES"){
-    location.replace("index.html");
+    location.replace("indexES.html");
   }else if (value === "en-US") {
-    location.replace("indexEN.html");
+    location.replace("index.html");
   }
 }
 
