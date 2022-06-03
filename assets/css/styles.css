@@ -299,7 +299,12 @@ a {
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
-
+.card__list-description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
 .card__pricing {
   position: absolute;
   background: linear-gradient(157deg, var(--first-color-light) -12%, var(--first-color) 109%);
@@ -394,7 +399,7 @@ a {
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px){
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -472,7 +477,7 @@ a {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
   .nav__menu {
     position: fixed;
     background-color: var(--container-color);
@@ -505,7 +510,6 @@ a {
   font-size: 1.3rem;
   cursor: pointer;
 }
-
 .bx {
   cursor: pointer;
 }
@@ -550,6 +554,7 @@ a {
 }
 
 .home__description {
+  line-height: 2rem;
   margin-bottom: var(--mb-2);
 }
 
@@ -598,7 +603,11 @@ a {
 .about__container {
   gap: 2.5rem;
 }
-
+.about__description,
+.security__description,
+.contact__description{
+  line-height: 2rem;
+}
 .about__data {
   text-align: center;
 }
@@ -714,7 +723,21 @@ a {
 .services__container {
   padding-top: 1rem;
 }
-
+#learn-more a{
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  border-radius: 0.5rem;
+}
+#learn-more a:hover{
+  color: #000;
+  background-color: white;
+  border: 1px solid;
+}
+.last{
+  margin-top: 4rem;
+}
 .services__data {
   display: grid;
   row-gap: 1rem;
@@ -724,7 +747,10 @@ a {
   border-radius: 1rem;
   text-align: center;
 }
-
+.services__description,
+.app__description{
+  line-height: 2rem;
+}
 .services__img {
   width: 135px;
   justify-self: center;
@@ -790,6 +816,8 @@ a {
 .footer__logo, .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-75);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .footer__logo {
@@ -800,20 +828,22 @@ a {
 
 .footer__description, .footer__link {
   font-size: var(--small-font-size);
+  line-height: 1.6rem;
+  color: var(--title-color);
 }
 
 .footer__links {
   display: grid;
   row-gap: .5rem;
-}
-
-.footer__link {
-  color: var(--title-color);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .footer__social {
   display: flex;
   column-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__social-link {
@@ -875,7 +905,7 @@ a {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px){
   .svg__img {
     width: 100%;
   }
